@@ -1,0 +1,267 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*This is the header*/
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(240, 240, 240);
+  border-bottom-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 40px;
+  margin-bottom: 10px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(30, 30, 30);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/*This is the section #1*/
+
+#box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#box1 .container1 {
+  padding: 20px;
+  text-align: center;
+}
+
+#box1 .img-container {
+  position: relative;
+}
+
+.price {
+  position: absolute;
+  background-color: rgb(0, 138, 248);
+  color: white;
+  border: none;
+  font-size: 14px;
+  padding: 8px 10px;
+  border-radius: 16px;
+  top: -10px;
+  right: 15px;
+}
+
+.discount {
+  position: absolute;
+  background-color: rgb(238, 98, 107);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 16px;
+  border-radius: 35px;
+  bottom: 0px;
+  left: 15px;
+}
+
+#box1 img {
+  width: 300px;
+}
+
+
+/*This is the section #2*/
+
+#box2 {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 20px;
+  color: rgb(240, 240, 240);
+  margin-bottom: 30px;
+}
+
+#box2 .container1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#box2 .container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#box2 img {
+  width: 100%;
+}
+
+/*This is the section #3*/
+
+#box3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#box3 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#box3 img {
+  width: 100%;
+}
+
+/*This is the footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(240, 240, 240);
+}
+
+footer div {
+  font-weight: 700;
+}
+
+/*This is the media queries*/
+
+@media (min-width: 750px) {
+  
+  /*This is the header*/
+
+  header .container {
+    flex-direction: row;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 10px 120px;
+  }
+
+  header nav {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .logo  {
+    margin-right: auto;
+  }
+
+  /*This is the section #1*/
+
+  #box1 {
+    flex-direction: row;
+    padding: 50px 50px;
+    
+  }
+
+  #box1 .container1 {
+    text-align: start;
+    width: 400px;
+    margin-right: auto;
+  }
+
+  #box1 h3 {
+    font-size: 25px;
+    font-weight: 800;
+  }
+
+  #box1 h1 {
+    font-size: 40px;
+  }
+
+  #box1 img {
+    width: 350px;
+  }
+
+  .price {
+    position: absolute;
+    background-color: rgb(0, 138, 248);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 16px;
+    top: -15px;
+    right: 30px;
+  }
+  
+  .discount {
+    position: absolute;
+    background-color: rgb(238, 98, 107);
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 25px 20px;
+    border-radius: 50px;
+    bottom: 8px;
+    left: 20px;
+  }
+
+  /*This is the section #2*/
+  
+  #box2 h3 {
+    font-size: 25px;
+    margin-bottom: 0;
+  }
+
+  #box2 h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 10px;
+  }
+
+  #box2 h4 {
+    font-size: 20px;
+  }
+
+   /*This is the section #3*/
+
+   #box3 .acceso {
+    width: 700px;
+   }
+
+   #box3 p {
+    font-size: 18px;
+   }
+}
+
+/*This is other media queries*/
+
+@media (min-width: 1315px) {
+  #box1 {
+    padding: 0 120px;
+  }
+
+  #box3 p {
+    padding: 0 150px;
+    text-align: justify;
+  }
+}
